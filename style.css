@@ -1,0 +1,172 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #FFB6C1, #ffffff);
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.bod{
+    width: 70%;
+}
+.content { 
+    display: flex;
+    flex-wrap: wrap; /* لجعل العناصر تلتف داخل الحاوية */
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    background-color: hsl(351, 90%, 81%);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    position: relative; 
+    border-radius: 40px;
+}
+
+#btn4 {
+    position: absolute; 
+    right: 20px; 
+    margin-right: 10px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgb(168, 168, 168, 0.38);
+    line-height: 0;
+}
+
+#task {
+    width: 60%;
+    margin-top: 130px;
+    background : rgba(255, 255, 255, 0);
+}
+
+.task2 {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid black 1px;
+    border-radius: 40px;
+    padding: 20px;
+    background-color: white;
+}
+
+
+.done{
+    background-color: rgb(158, 253, 160);
+}
+
+.task2:hover{
+    box-shadow: 0px 3px 15px rgb(97, 97, 97, 0.843);
+}
+.tasks {
+    display: flex;
+    flex-wrap: wrap; /* لجعل العناصر تلتف */
+    gap: 10px; /* لإضافة مسافة بين العناصر إذا لزم الأمر */
+    padding: 5px;
+}
+
+.btn1{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgb(168, 168, 168, 0.38);
+    background: rgb(114, 0, 0);
+    color: white;
+    line-height: 0;
+}
+.btn2{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgb(168, 168, 168, 0.38);
+    background: green;
+    color: white;
+    line-height: 0;
+}
+.btn3{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgb(168, 168, 168, 0.38);
+    background: blue;
+    color: white;
+    line-height: 0;
+}
+.btn0{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn6{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgb(168, 168, 168, 0.38);
+    background-color: rgb(118, 0, 101);
+    color: white;
+    line-height: 0;
+}
+@media (max-width: 480px){
+    #task{
+        width: 90%;
+    }
+    .btn0{
+        width: 100%;
+    }
+    .bod{
+        position: relative;
+    }
+    .date{
+        position: absolute;
+        top: 35px;
+        left:100%;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .btn0{
+        width: 100%;
+    }
+    .bod{
+        position: relative;
+    }
+    .date{
+        position: absolute;
+        top: 35px;
+        left:100%;
+    }
+    #task{
+        width: 90%;
+    }
+}
+@media (min-width: 769px ) and (max-width: 1103px){
+    .btn0{
+        display: flex;
+        flex-direction: column;      
+    }
+    .btn1, .btn2, .btn3, .btn6 {
+        margin-bottom: 10px;
+    }
+    
+}
